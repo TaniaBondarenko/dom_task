@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Стиль вкладок */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 25%;
+  height: 100%;
+}
+
+/* Стиль кнопок, используемых для открытия содержимого вкладки */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Изменить цвет фона кнопок при наведении мыши */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Создать активный / текущий класс "tab button" */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Стиль вкладки из содержимым */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 75%;
+  border-left: none;
+  height: auto;
+  display: none;
+}
