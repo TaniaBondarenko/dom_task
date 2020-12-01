@@ -6,45 +6,55 @@
 <script src="my_javascript.js"></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Satisfy&display=swap"
+    rel="stylesheet">
 </head>
 <body>
-<div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'jan' )">Cічень</button>
-    <button class="tablinks" onclick="openCity(event, 'feb')" > Лютий</button>
-    <button class="tablinks" onclick="openCity(event, 'mar')" >Березень</button>
-    <button class="tablinks" onclick="openCity(event, 'apr')" >Квітень</button>
-    <button class="tablinks" onclick="openCity(event, 'may')" >Травень</button>
-    <button class="tablinks" onclick="openCity(event, 'jun' )" >Червень</button>
-    <button class="tablinks" onclick="openCity(event, 'jul')" >Липень</button>
-    <button class="tablinks" onclick="openCity(event, 'aug')" >Серпень</button>
-    <button class="tablinks" onclick="openCity(event, 'sep')" >Вересень</button>
-    <button class="tablinks" onclick="openCity(event, 'oct')" >Жовтень</button>
-    <button class="tablinks" onclick="openCity(event, 'nov')" >Листопад</button>
-    <button class="tablinks" onclick="openCity(event, 'dec')" >Грудень</button>
+    <header class="head_title"><h2>Music of the year</h2></header>
+<main>
+    <div class="nav">
+    <button class="month" onclick="openMonth(event, 'jan' )">January</button>
+    <button class="month" onclick="openMonth(event, 'feb')" > February</button>
+    <button class="month" onclick="openMonth(event, 'mar')" >March</button>
+    <button class="month" onclick="openMonth(event, 'apr')" >April</button>
+    <button class="month" onclick="openMonth(event, 'may')" >May</button>
+    <button class="month" onclick="openMonth(event, 'jun' )" >June</button>
+    <button class="month" onclick="openMonth(event, 'jul')" >July</button>
+    <button class="month" onclick="openMonth(event, 'aug')" >August</button>
+    <button class="month" onclick="openMonth(event, 'sep')" >September</button>
+    <button class="month" onclick="openMonth(event, 'oct')" >October</button>
+    <button class="month" onclick="openMonth(event, 'nov')" >November</button>
+    <button class="month" onclick="openMonth(event, 'dec')" >December</button>
 </div>
-<div id="jan" class="tabcontent">
-    <h3>January</h3>
-    <p>January is the capital city of England.</p>
+<div id="jan" class="content">
+    
+    <img src="images/jan.jpg">
+    <audio controls>
+        <source src="sounds/vremena01.mp3" type="audio/mp3" controls="controls">
+       
+        Your browser does not support the audio element.
+    </audio>
 </div>
-<div id="feb" class="tabcontent">
-    <h3>February</h3>
-    <p>February is the capital city of England.</p>
+<div id="feb" class="content">
+    
+    <img src="images/feb.jpg">
 </div>
-<div id="mar" class="tabcontent">
-    <h3>March</h3>
-    <p>March is the capital city of England.</p>
+<div id="mar" class="content">
+    >
+    <img src="images/mar.jpg">
 </div>
-<div id="apr" class="tabcontent">
+<div id="apr" class="content">
     <h3>April</h3>
     <p>April is the capital city of England.</p>
 </div>
-<div id="may" class="tabcontent">
+<div id="may" class="content">
     <h3>May</h3>
     <p>May is the capital city of England.</p>
 </div>
 
 
 
-
+</main>
 </body>
 </html>

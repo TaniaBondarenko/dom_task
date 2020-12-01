@@ -1,24 +1,20 @@
-function openCity(evt, cityName) {
+function openMonth(evt, monthName) {
         // Объявить все переменные
-        var i, tabcontent, tablinks;
+        var i, content, month;
 
-        // Получить все элементы с class="tabcontent" и скрыть их
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
+        // Получить все элементы с class="content" и скрыть их
+        content = document.getElementsByClassName("content");
+        for (i = 0; i < content.length; i++) {
+            content[i].style.display = "none";
         }
 
-        // Получить все элементы с class="tablinks" и удалить class "active"
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        // Получить все элементы с class="month" и удалить class "active"
+        month = document.getElementsByClassName("month");
+        for (i = 0; i < month.length; i++) {
+            month[i].className = month[i].className.replace(" active", "");
         }
 
         // Показать текущую вкладку и добавить "active" класс по ссылке, открывшей вкладку
-        document.getElementById(cityName).style.display = "block";
+        document.getElementById(monthName).style.display = "block";
         evt.currentTarget.className += " active";
-    }
-
-
-
-
+}

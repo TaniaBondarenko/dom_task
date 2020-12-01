@@ -1,47 +1,75 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  padding: 0;
+}
+
+.main {
+  width: auto;
+}
+
+h2 {
+  height: 100px;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 0.5em;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Satisfy", cursive;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* Стиль вкладок */
-.tab {
+.nav {
   float: left;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
-  width: 25%;
+  width: 200px;
   height: 100%;
 }
 
 /* Стиль кнопок, используемых для открытия содержимого вкладки */
-.tab button {
+.month {
   display: block;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Satisfy", cursive;
+  font-size: 20px;
   background-color: inherit;
   color: black;
-  padding: 22px 16px;
+  padding: 10px 16px;
+  padding-bottom: 30px;
   width: 100%;
   border: none;
   outline: none;
   text-align: left;
   cursor: pointer;
   transition: 0.3s;
+  height: 26px;
 }
 
 /* Изменить цвет фона кнопок при наведении мыши */
-.tab button:hover {
+.nav .month:hover {
   background-color: #ddd;
 }
 
 /* Создать активный / текущий класс "tab button" */
-.tab button.active {
+.nav .month.active {
   background-color: #ccc;
 }
 
 /* Стиль вкладки из содержимым */
-.tabcontent {
+.content {
   float: left;
   padding: 0px 12px;
   border: 1px solid #ccc;
-  width: 75%;
+  width: auto;
   border-left: none;
   height: auto;
   display: none;
+}
+
+img {
+  width: 750px;
+  height: 477px;
 }
