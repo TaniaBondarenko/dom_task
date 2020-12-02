@@ -17,4 +17,7 @@ function openMonth(evt, monthName) {
         // Показать текущую вкладку и добавить "active" класс по ссылке, открывшей вкладку
         document.getElementById(monthName).style.display = "block";
         evt.currentTarget.className += " active";
+
+    
 }
+

@@ -11,8 +11,12 @@
     rel="stylesheet">
 </head>
 <body>
-    <header class="head_title"><h2>Music of the year</h2></header>
-<main>
+ <div class="container">
+    <div class="header_container">
+    <h2 class="head_title">Music of the year</h2>
+    <img class="header_img" src="images/pattern.jpg">
+</div>
+<div class=nav_content>
     <div class="nav">
     <button class="month" onclick="openMonth(event, 'jan' )">January</button>
     <button class="month" onclick="openMonth(event, 'feb')" > February</button>
@@ -27,21 +31,20 @@
     <button class="month" onclick="openMonth(event, 'nov')" >November</button>
     <button class="month" onclick="openMonth(event, 'dec')" >December</button>
 </div>
-<div id="jan" class="content">
-    
+
+
+
+<div id="jan" class="content">   
     <img src="images/jan.jpg">
     <audio controls>
-        <source src="sounds/vremena01.mp3" type="audio/mp3" controls="controls">
-       
+        <source src="sounds/jan.mp3" type="audio/mp3" controls="controls">
         Your browser does not support the audio element.
     </audio>
 </div>
-<div id="feb" class="content">
-    
+<div id="feb" class="content"> 
     <img src="images/feb.jpg">
 </div>
 <div id="mar" class="content">
-    >
     <img src="images/mar.jpg">
 </div>
 <div id="apr" class="content">
@@ -52,9 +55,8 @@
     <h3>May</h3>
     <p>May is the capital city of England.</p>
 </div>
+</div> 
 
-
-
-</main>
+</div>
 </body>
 </html>

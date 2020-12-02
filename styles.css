@@ -1,26 +1,120 @@
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
   padding: 0;
 }
 
-.main {
-  width: auto;
+.container {
+  max-width: 1225px;
+  margin: 0 auto;
+  display: block;
+
+  opacity: 0.8;
 }
 
-h2 {
-  height: 100px;
+/*HEADER-TOP*/
+.header_container {
+  position: relative;
+  height: 120px;
+  max-width: 1225px;
+}
+
+.header_img {
+  width: fit-content;
+  max-width: 1225px;
+  height: 120px;
+  z-index: -1;
+  opacity: 0.6;
+  position: absolute;
+}
+
+.head_title {
+  font-size: 50px;
+  font-weight: 0.5em;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Satisfy", cursive;
   text-align: center;
+  position: absolute;
+  width: 100%;
+}
+
+/*NAVIAGTION MONTHS BUTTONS*/
+
+.nav {
+  width: 210px;
+  border: none;
+  height: 480px;
+  flex: 0 1 255px;
+}
+
+.month {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Satisfy", cursive;
+  font-size: 20px;
+  color: black;
+  padding: 8px 12px;
+  margin-bottom: 1px;
+  width: 250px;
+  border: none;
+  text-align: left;
+  transition: 0.3s;
+  height: 40px;
+  cursor: pointer;
+  border: 0.5px solid rgb(255, 165, 92);
+}
+
+.month:hover {
+  background-color: rgb(255, 165, 92);
+}
+.month :focus {
+  background-color: rgb(255, 165, 92);
+}
+
+/*CONTENT WITH IMGS AND MUSIC*/
+.nav_content {
+  display: flex;
+}
+
+.content {
+  display: none;
+  flex: 1;
+  height: 491px;
+  border: 1px solid #ccc;
+  background-color: crimson;
+}
+
+img {
+  width: 972px;
+  height: 490px;
+}
+
+audio {
+  position: relative;
+  top: -60px;
+  left: 30%;
+  opacity: 0.8;
+}
+
+/*.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.nav_content {
+  width: 1200px;
+  padding-left: 200px;
+  display: flexbox;
+}
+
+.head_title {
   font-size: 80px;
   font-weight: 0.5em;
   font-family: "Montserrat", sans-serif;
   font-family: "Satisfy", cursive;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  justify-content: center;
+  display: flex;
 }
 
-/* Стиль вкладок */
 .nav {
   float: left;
   border: 1px solid #ccc;
@@ -29,7 +123,7 @@ h2 {
   height: 100%;
 }
 
-/* Стиль кнопок, используемых для открытия содержимого вкладки */
+
 .month {
   display: block;
   font-family: "Montserrat", sans-serif;
@@ -48,28 +142,52 @@ h2 {
   height: 26px;
 }
 
-/* Изменить цвет фона кнопок при наведении мыши */
+
 .nav .month:hover {
   background-color: #ddd;
 }
 
-/* Создать активный / текущий класс "tab button" */
+
 .nav .month.active {
   background-color: #ccc;
 }
 
-/* Стиль вкладки из содержимым */
+
 .content {
   float: left;
   padding: 0px 12px;
   border: 1px solid #ccc;
-  width: auto;
+  width: 750px;
   border-left: none;
-  height: auto;
+  height: 480px;
   display: none;
 }
 
 img {
   width: 750px;
-  height: 477px;
+  height: 480px;
 }
+
+audio {
+  position: relative;
+  top: -60px;
+  left: 200px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}*/
