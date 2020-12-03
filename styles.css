@@ -7,7 +7,7 @@
   max-width: 1225px;
   margin: 0 auto;
   display: block;
-
+  background-color: #ede1cb;
   opacity: 0.8;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .header_img {
-  width: fit-content;
+  width: 12250px;
   max-width: 1225px;
   height: 120px;
   z-index: -1;
@@ -42,7 +42,7 @@
 .nav {
   width: 210px;
   border: none;
-  height: 480px;
+  height: 491px;
   flex: 0 1 255px;
 }
 
@@ -60,7 +60,8 @@
   transition: 0.3s;
   height: 40px;
   cursor: pointer;
-  border: 0.5px solid rgb(255, 165, 92);
+  background-color: #ede1cb;
+  border: 0.5px solid #735533;
 }
 
 .month:hover {
@@ -80,11 +81,12 @@
   flex: 1;
   height: 491px;
   border: 1px solid #ccc;
-  background-color: crimson;
+  background-color: #ede1cb;
+  width: 930px;
 }
 
 img {
-  width: 972px;
+  width: 950px;
   height: 490px;
 }
 
