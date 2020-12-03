@@ -19,7 +19,7 @@
 }
 
 .header_img {
-  width: 12250px;
+  width: 1225px;
   max-width: 1225px;
   height: 120px;
   z-index: -1;
@@ -42,7 +42,7 @@
 .nav {
   width: 210px;
   border: none;
-  height: 491px;
+  height: 581px;
   flex: 0 1 255px;
 }
 
@@ -50,25 +50,24 @@
   display: block;
   font-family: "Montserrat", sans-serif;
   font-family: "Satisfy", cursive;
-  font-size: 20px;
+  font-size: 25px;
   color: black;
   padding: 8px 12px;
-  margin-bottom: 1px;
+  margin-bottom: 1.5px;
   width: 250px;
   border: none;
   text-align: left;
   transition: 0.3s;
-  height: 40px;
+  height: 47px;
   cursor: pointer;
   background-color: #ede1cb;
   border: 0.5px solid #735533;
 }
 
-.month:hover {
-  background-color: rgb(255, 165, 92);
-}
-.month :focus {
-  background-color: rgb(255, 165, 92);
+.month:hover,
+.month:focus,
+.active {
+  background-color: #a89575;
 }
 
 /*CONTENT WITH IMGS AND MUSIC*/
@@ -79,7 +78,7 @@
 .content {
   display: none;
   flex: 1;
-  height: 491px;
+  height: 581px;
   border: 1px solid #ccc;
   background-color: #ede1cb;
   width: 930px;
@@ -87,109 +86,13 @@
 
 img {
   width: 950px;
-  height: 490px;
+  height: 580px;
+  border: 0.5px solid #735533;
 }
 
 audio {
   position: relative;
-  top: -60px;
+  top: 60px;
   left: 30%;
   opacity: 0.8;
 }
-
-/*.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.nav_content {
-  width: 1200px;
-  padding-left: 200px;
-  display: flexbox;
-}
-
-.head_title {
-  font-size: 80px;
-  font-weight: 0.5em;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Satisfy", cursive;
-  justify-content: center;
-  display: flex;
-}
-
-.nav {
-  float: left;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  width: 200px;
-  height: 100%;
-}
-
-
-.month {
-  display: block;
-  font-family: "Montserrat", sans-serif;
-  font-family: "Satisfy", cursive;
-  font-size: 20px;
-  background-color: inherit;
-  color: black;
-  padding: 10px 16px;
-  padding-bottom: 30px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-  height: 26px;
-}
-
-
-.nav .month:hover {
-  background-color: #ddd;
-}
-
-
-.nav .month.active {
-  background-color: #ccc;
-}
-
-
-.content {
-  float: left;
-  padding: 0px 12px;
-  border: 1px solid #ccc;
-  width: 750px;
-  border-left: none;
-  height: 480px;
-  display: none;
-}
-
-img {
-  width: 750px;
-  height: 480px;
-}
-
-audio {
-  position: relative;
-  top: -60px;
-  left: 200px;
-}
-
-@media screen and (max-width: 767px) {
-  .container {
-    max-width: none;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .container {
-    max-width: 750px;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .container {
-    max-width: 970px;
-  }
-}*/
