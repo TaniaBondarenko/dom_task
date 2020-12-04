@@ -18,15 +18,8 @@
   position: relative;
   height: 120px;
   max-width: 1225px;
-}
-
-.header_img {
-  width: 1222px;
-  max-width: 1225px;
-  height: 120px;
-  z-index: -1;
-  opacity: 0.6;
-  position: absolute;
+  background-image: url("images/sheet_music.jpg");
+  opacity: 0.8;
 }
 
 .head_title {
@@ -42,7 +35,7 @@
 /*NAVIAGTION MONTHS BUTTONS*/
 
 .nav {
-  width: 210px;
+  width: 250px;
   border: none;
   height: 581px;
   flex: 0 1 255px;
@@ -75,6 +68,7 @@
 /*CONTENT WITH IMGS AND MUSIC*/
 .nav_content {
   display: flex;
+  width: 100%;
 }
 
 .content {
@@ -98,4 +92,33 @@ audio {
   top: 20px;
   left: 30%;
   opacity: 0.8;
+}
+
+@media screen and (max-width: 500px) {
+  .nav_content {
+    display: inline-block;
+  }
+
+  .header_container {
+    height: 180px;
+  }
+
+  .head_title {
+    font-size: 40px;
+  }
+
+  .nav,
+  .month {
+    max-width: 480px;
+    width: 100%;
+  }
+
+  .content,
+  .content_img {
+    height: auto;
+    max-width: 478px;
+  }
+  audio {
+    left: 18%;
+  }
 }

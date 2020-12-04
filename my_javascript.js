@@ -18,27 +18,23 @@ function openMonth(evt, monthName) {
         }
         for (i = 0; i < n; i++) {
             month[i].className = month[i].className.replace(" active", "");
+            pauseAudio(i);
         }
         document.getElementById(monthName).style.display = "block";
         evt.currentTarget.className += " active";
 }
 
-window.addEventListener("load", addImg);
-function addImg (){
+window.addEventListener("load", addContent);
+function addContent (){
     for (let i = 0; i < n; i++) {    
         content[i].innerHTML += '<img class="content_img" src="' + imgs[i] + '" alt="Nice picture of nature">';
         content[i].innerHTML;    
-
-    }
-};
-
-window.addEventListener("load", addSound);
-function addSound() {
-    for (let i = 0; i < n; i++) {
         content[i].insertAdjacentHTML("afterbegin", "<audio controls><audio>");
         audTag = document.querySelectorAll("audio");
-
         audTag[i].innerHTML = '<source src="' + sounds[i] + ' "type="audio/mp3", controls="controls">';
-        
+        audTag[i].innerHTML += "Your browser does not support the audio element.";
+
     }
 };
+
+pauseAudio = (i) => audTag[i].pause() ;
