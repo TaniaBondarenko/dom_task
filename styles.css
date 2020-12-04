@@ -9,6 +9,8 @@
   display: block;
   background-color: #ede1cb;
   opacity: 0.8;
+  border: 2px solid #735533;
+  border-radius: 0.5%;
 }
 
 /*HEADER-TOP*/
@@ -19,7 +21,7 @@
 }
 
 .header_img {
-  width: 1225px;
+  width: 1222px;
   max-width: 1225px;
   height: 120px;
   z-index: -1;
@@ -84,15 +86,16 @@
   width: 930px;
 }
 
-img {
+.content_img {
   width: 950px;
   height: 580px;
-  border: 0.5px solid #735533;
+  border: 1px solid #735533;
+  margin-top: -57px;
 }
 
 audio {
   position: relative;
-  top: 60px;
+  top: 20px;
   left: 30%;
   opacity: 0.8;
 }
