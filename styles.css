@@ -13,26 +13,26 @@
   border-radius: 0.5%;
 }
 
-/*HEADER-TOP*/
 .header_container {
   position: relative;
   height: 120px;
   max-width: 1225px;
   background-image: url("images/sheet_music.jpg");
+  background-size: cover;
+  border-bottom: 2px solid #735533;
   opacity: 0.8;
 }
 
 .head_title {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 0.5em;
   font-family: "Montserrat", sans-serif;
   font-family: "Satisfy", cursive;
   text-align: center;
   position: absolute;
   width: 100%;
+  top: -20px;
 }
-
-/*NAVIAGTION MONTHS BUTTONS*/
 
 .nav {
   width: 250px;
@@ -47,7 +47,7 @@
   font-family: "Satisfy", cursive;
   font-size: 25px;
   color: black;
-  padding: 8px 12px;
+  padding: 8px 1px;
   margin-bottom: 1.5px;
   width: 250px;
   border: none;
@@ -65,7 +65,6 @@
   background-color: #a89575;
 }
 
-/*CONTENT WITH IMGS AND MUSIC*/
 .nav_content {
   display: flex;
   width: 100%;
@@ -77,11 +76,11 @@
   height: 581px;
   border: 1px solid #ccc;
   background-color: #ede1cb;
-  width: 930px;
+  width: 920px;
 }
 
 .content_img {
-  width: 950px;
+  width: 928px;
   height: 580px;
   border: 1px solid #735533;
   margin-top: -57px;
@@ -91,16 +90,78 @@ audio {
   position: relative;
   top: 20px;
   left: 30%;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 901px) and (max-width: 1199px) {
+  .header_container {
+    height: 110px;
+  }
+
+  .head_title {
+    font-size: 53px;
+  }
+
+  .nav,
+  .month {
+    max-width: 1179px;
+    width: 100%;
+  }
+
+  .month {
+    text-align: center;
+  }
+
+  .content,
+  .content_img {
+    height: auto;
+    max-width: 1177px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
   .nav_content {
     display: inline-block;
   }
 
   .header_container {
-    height: 180px;
+    height: 100px;
+  }
+
+  .head_title {
+    font-size: 45px;
+  }
+
+  .nav,
+  .month {
+    max-width: 880px;
+    width: 100%;
+  }
+
+  .month {
+    text-align: center;
+  }
+
+  .content,
+  .content_img {
+    height: auto;
+    max-width: 878px;
+    width: 100%;
+  }
+
+  audio {
+    left: 25%;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 599px) {
+  .nav_content {
+    display: inline-block;
+  }
+
+  .header_container {
+    height: 160px;
   }
 
   .head_title {
@@ -109,16 +170,55 @@ audio {
 
   .nav,
   .month {
-    max-width: 480px;
+    max-width: 580px;
     width: 100%;
+  }
+
+  .month {
+    text-align: center;
   }
 
   .content,
   .content_img {
     height: auto;
-    max-width: 478px;
+    max-width: 578px;
+    width: 100%;
   }
   audio {
     left: 18%;
+  }
+}
+
+@media screen and (min-width: 250px) and (max-width: 399px) {
+  .nav_content {
+    display: inline-block;
+  }
+
+  .header_container {
+    height: 140px;
+  }
+
+  .head_title {
+    font-size: 35px;
+  }
+
+  .nav,
+  .month {
+    max-width: 380px;
+    width: 100%;
+  }
+
+  .month {
+    text-align: center;
+  }
+
+  .content,
+  .content_img {
+    height: auto;
+    max-width: 378px;
+    width: 100%;
+  }
+  audio {
+    left: 10%;
   }
 }
