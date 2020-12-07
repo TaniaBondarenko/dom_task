@@ -156,6 +156,7 @@ audio {
 
   audio {
     left: 25%;
+    top: 70px;
   }
 }
 
@@ -232,6 +233,7 @@ audio {
   .content_img {
     margin-top: 0;
   }
+
   audio {
     left: 10%;
     top: 70px;
